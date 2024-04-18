@@ -22,7 +22,6 @@ function startGame() {
     clearWindow();
     randomNumber = Math.floor(Math.random() * choices.length);
     computerChoice = choices[randomNumber];
-    console.log(computerChoice);
     buttons.style.display = 'flex';
     start.style.display = 'none';
     rock.addEventListener('click', function () {
@@ -69,7 +68,6 @@ function draw() {
     clearWindow();
     opponentChoice.textContent = 'Computer chose ' + computerChoice;
     drawWindow.style.display = 'flex';
-
 }
 
 function youLost() {
