@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    padding: 20px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(188, 182, 219);
+    font-weight: bolder;
+    z-index: 1;
+
+}
+
+.game-container {
+    width: 100%;
+    background-color: beige;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.message {
+    height: 100%;
+    width: 100%;
+}
+
+.draw-window,
+.lost-window,
+.winning-window {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 40px;
+    opacity: 0.65;
+    display: none;
+
+}
+
+.buttons {
+    position: absolute;
+    top: 80%;
+    width: min(350px, 70vw);
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.start-game {
+    position: absolute;
+    top: 70%;
+}
+
+.computer-choice {
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.9;
+}
